@@ -47,13 +47,9 @@
 
 <!-- ############## Start Header part ############### -->
   <header>
-
-
-    <!-- ############## Insert Logo, banner or title ############### -->
-
-
-    <!-- ############## Insert Navigation ############### -->
-    <nav>
+    <!-- ############## Insert Navigation mobile ############### -->
+    <nav class="flex" id="NavMobile">
+      <img class="icon" src="img/burger.png" alt="">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="produits.html">Mobilier</a></li>
@@ -62,7 +58,24 @@
         <li><a href="produits.html">Décorations</a></li>
         <li><a href="contact.html">Informations & Contact</a></li>
       </ul>
-      <aside class="">
+      <aside>
+        <input type="text" name="q" id="search-input"><img src="img/magnifier.png" alt="search">
+      </aside>
+    </nav>
+    <!-- ############## Insert title ############### -->
+    <h1>Univers Jardin</h1>
+
+    <!-- ############## Insert Navigation regular ############### -->
+    <nav id="NavRegular">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Mobilier</a></li>
+        <li><a href="produits.html">Amenagement</a></li>
+        <li><a href="produits.html">Piscines & SPA</a></li>
+        <li><a href="produits.html">Décorations</a></li>
+        <li><a href="contact.html">Informations & Contact</a></li>
+      </ul>
+      <aside>
         <input type="text" name="q" id="search-input"> <img src="img/magnifier.png" alt="search">
       </aside>
     </nav>
@@ -78,7 +91,7 @@
     <!-- ############## Bienvenue ############### -->
 
         <!-- ############## Bienvenue ############### -->
-        <aside class="">
+        <aside class="regular">
           <img src="img/logo.png" alt="">
         </aside>
         <section>
@@ -88,43 +101,39 @@
             La meilleure qualité et à tous les prix afin de satisfaire toutes les budgets.</p>
         </section>
 
-        <section>
+        <section class="regular">
           <video width="800" height="450" src="video/univers-jardin.mp4" muted autoplay loop poster="posterimage.jpg"></video>
         </section>
-        
-        <section>
-          <article><a href="produits.html"><img src="img/salons/salon-anthracite.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/salons/salon-isa.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/salons/canape-palmbeach.jpg" alt=""></a></article>
-        </section>
 
         <section>
-          <article><a href="produits.html"><img src="img/abri/abri-europa.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/abri/armoire-helka.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/abri/kiosque-villaverde.jpg" alt=""></a></article>
+          <article><a href="produits.html"><img class="MobImg" src="img/salons/salon-anthracite.jpg" alt=""></a></article>
+          <article><a href="produits.html"><img class="MobImg" src="img/abri/abri-europa.jpg" alt=""></a></article>
+          <article><a href="produits.html"><img class="MobImg" src="img/piscine/piscine-horsol-bois.jpg" alt=""></a></article>
         </section>
-
-        <section>
-          <article><a href="produits.html"><img src="img/piscine/piscine-horsol-bois.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/piscine/piscine-bois-gm.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/spa/tente-spa.jpg" alt=""></a></article>
-        </section>
-
-        <section>
-          <article><a href="produits.html"><img src="img/fontaine/fontaine-arezzo.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/fontaine/fontaine-galia.jpg" alt=""></a></article>
-          <article><a href="produits.html"><img src="img/deco/pergola-florence.jpg" alt=""></a></article>
-        </section>
-
   </main>
 <!-- ############## End Main part ############### -->
 
 
 
 <!-- ############## Start Footer part ############### -->
-  <footer>
+  <footer class="RegularFlex">
+    <section class="CONTACT">
+      <h3>CONTACT</h3>
+    <p>Univers Jardin <br>
+    18 Avenue du Général Leclerc <br>
+    83120 Sainte-Maxime</p>
+    </section>
 
+    <section class="HEURES">
+      <h3>HEURES D'OUVERTURE</h3>
+      <p>Ouvert du <br>
+      lundi au samedi <br>
+      de 09h00 à 19h00</p>
+    </section>
 
+    <div class="">
+      <img class="icon" src="img/cb.jpg" alt=""> <img class="icon" src="img/mastercard.jpg" alt=""> <img class="icon" src="img/visa.jpg" alt="">
+    </div>
   </footer>
 <!-- ############## End Footer part ############### -->
 

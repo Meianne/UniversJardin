@@ -100,16 +100,49 @@ textarea {
 
    /* start global classes */
 
+  .flex {
+    display: flex;
+  }
 
-
-
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
    /* end global classes */
 
 
    /* start common rules */
 
+body {
+  margin: .5em;
+}
 
+main {
+  width: 95%;
+  margin: auto;
+}
 
+a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul, li, nav {
+  list-style-type: none;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
 
    /*End common rules*/
 
@@ -117,7 +150,40 @@ textarea {
 
    /* Start Header style*/
 
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #48BF84;
+  padding: 0 2em;
+  position: sticky;
+}
 
+input
+{
+  width: 150px;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+  @media all and (min-width: 320px) {
+    #NavRegular, ul, .regular {
+      display: none;
+    }
+
+    .MobImg {
+      width: 90%;
+    }
+
+    .NavMobile {
+      display: block;
+    }
+
+footer {
+  width: 300px;
+}
 
 
    /*End header style*/
@@ -126,8 +192,21 @@ textarea {
 
    /* Start footer style*/
 
+footer {
+  text-align: center;
+  background-color: #48BF84;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  padding-bottom: 1.5em;
+  position: absolute;
+}
 
-
+h3 {
+  text-decoration: underline;
+}
 
    /*End footer style*/
 
@@ -135,7 +214,10 @@ textarea {
 
    /* Start index main style*/
 
-
+article {
+  width: 300px;
+  padding: .5em .5em;
+}
 
 
    /*End index main style*/
