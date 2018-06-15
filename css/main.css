@@ -148,7 +148,7 @@ ul, li, nav {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
   font-size: 1em;
 }
 
@@ -181,38 +181,105 @@ nav {
   justify-content: space-between;
 }
 
+#NavRegular {
+  display: flex;
+}
 
-/* <------- responsive 320 ------------> */
-
-  @media all and (min-width: 320px) {
-    #NavRegular, ul, .regular, video, .logo {
-      display: none;
-    }
-
-    .MobImg {
-      width: 90%;
-    }
-
-    .NavMobile {
-      display: block;
-    }
-
-    footer section div {
-      width: 40%;
-      height: 200px;
-      font-size: .8em;
-    }
-
-    footer section {
-      justify-content: center;
-    }
-
-    .mobilArticles {
-      flex-direction: column;
-    }
-  }
 
    /*End header style*/
+
+   /* <------- responsive 320 ------------> */
+
+@media all and (min-width: 320px) {
+  .NavRegular, ul, .regular, video, .logo {
+    display: none;
+  }
+
+  .MobImg {
+    width: 90%;
+  }
+
+  .NavMobile {
+    display: block;
+  }
+
+  footer section div {
+    width: 40%;
+    height: 200px;
+    font-size: .8em;
+  }
+
+  footer section {
+    justify-content: center;
+  }
+
+  article {
+    width: 300px;
+  }
+
+  .flexmobil {
+    flex-direction: column;
+  }
+}
+
+   /* <------- responsive 640 ------------> */
+
+@media all and (min-width: 640px) {
+  .NavMobile ul, video, {
+    display: none;
+  }
+
+  .NavRegular ul {
+    display: block;
+  }
+
+  footer section div {
+    font-size: 1em;
+  }
+
+  footer section {
+    justify-content: space-around;
+    margin: .5em;
+  }
+
+  article {
+    width: 600px;
+  }
+
+  .flexmobil {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .NavMobile {
+    display: none;
+  }
+
+  .NavRegular, ul, .logo, video {
+    display: block;
+  }
+
+
+
+  footer section div {
+    font-size: 1em;
+  }
+
+  footer section {
+    justify-content: space-around;
+    margin: .5em;
+  }
+
+  article {
+    width: 600px;
+  }
+
+  .flexmobil {
+    flex-direction: row;
+  }
+}
+
 
 
 
@@ -221,11 +288,9 @@ nav {
 footer {
   text-align: center;
   background-color: #48BF84;
-  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  position: absolute;
 }
 
 h3, strong {
@@ -239,8 +304,11 @@ h3, strong {
 
    /* Start index main style*/
 
+   main section p {
+     text-align: justify;
+   }
+
 article {
-  width: 300px;
   padding: .5em .5em;
 }
 
