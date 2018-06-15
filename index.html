@@ -11,22 +11,15 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+
   <!-- Place favicon.ico in the root directory -->
-  <!--
-  ############## Place favicon.ico in the root directory ###############
-  -->
   <link rel="icon" href="favicon.ico" />
 
-
-  <!--
-  ############## Place external ressources ###############
-  -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <!--
-  ############## Place css ###############
-  -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
   <!-- End head part -->
 </head>
@@ -61,7 +54,7 @@
           <li><a href="contact.html">Informations & Contact</a></li>
         </ul>
       </nav>
-      <aside>
+      <aside class="flexCenter">
         <input class="search" type="text" name="q" id="search-input">
         <img src="img/magnifier.png" alt="search">
       </aside>
@@ -74,9 +67,14 @@
 <!-- ############## Start Main part ############### -->
   <main>
 <!-- ############## Bienvenue ############### -->
-    <aside>
-      <img class="logo" src="img/logo.png" alt="">
-    </aside>
+    <div class="flex">
+      <aside>
+        <img class="logo" src="img/logo.png" alt="">
+      </aside>
+      <div>
+        <video width="800" height="450" src="video/univers-jardin.mp4" muted autoplay loop poster="posterimage.jpg"></video>
+      </div>
+    </div>
     <section>
       <p class="tJustify">Avec plus de 2500m², Univers Jardin est la plus grande jardinerie et de décoration de Sainte-Maxime.<br>
       <br>
@@ -84,9 +82,7 @@
       La meilleure qualité et à tous les prix afin de satisfaire toutes les budgets.</p>
     </section>
 <!-- ############## Video ############### -->
-    <div>
-      <video width="800" height="450" src="video/univers-jardin.mp4" muted autoplay loop poster="posterimage.jpg"></video>
-    </div>
+
 <!-- ############## Articles ############### -->
     <section class="tCenter">
       <h3>Notre sélection</h3>
@@ -94,7 +90,8 @@
           <a href="produits.html">
             <img class="img" src="img/salons/salon-anthracite.jpg" alt="">
           </a>
-          <p class="tCenter"><strong>Salon Anthracite - 155 €</strong><br>
+          <h4>Salon Anthracite</h4>
+          <p><strong>155 €</strong><br>
             Ensemble composé de 2 fauteuils,<br> 1 canapé et 1 table basse
           </p>
         </article>
@@ -103,18 +100,18 @@
           <a href="produits.html">
             <img class="img" src="img/abri/abri-europa.jpg" alt="">
           </a>
-          <p class="tCenter"><strong>Abri de jardin Europa - 1395 €</strong><br>
-            4.93m²
-          </p>
+          <h4>Abri de jardin Europa</h4>
+          <p><strong>1395 €</strong><br>
+            4.93m²</p>
         </article>
 
         <article>
           <a href="produits.html">
             <img class="img" src="img/piscine/piscine-horsol-bois.jpg" alt="">
           </a>
-          <p><strong>Piscine hors sol en bois - 3999  €</strong><br>
-            L.3,5m x l.3,5m x H.1,2m
-          </p>
+          <h4>Piscine hors sol en bois</h4>
+          <p><strong>3999  €</strong><br>
+            L.3,5m x l.3,5m x H.1,2m</p>
         </article>
     </section>
   </main>

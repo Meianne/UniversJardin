@@ -98,7 +98,8 @@ textarea {
    ========================================================================== */
 
 header {
-  background-color: blue;
+  background-image: url(img/header.jpg) opacity: 0.5;
+  background-color: #61D095;
 }
 
 nav {
@@ -118,7 +119,9 @@ input {
 }
 
 
-
+.seconColor {
+  color: ##61D095;
+}
 
 
 main {
@@ -126,7 +129,8 @@ main {
 }
 
 footer {
-  background-color: green;
+  padding: .5em;
+  background-color: #61D095;
 }
 
 article {
@@ -201,12 +205,33 @@ div {
   }
 
   p {
+    padding: .5em;
     text-align: center;
     font-size: 1em;
   }
 
   h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #357A5E;
     text-align: center;
+    font-size: 3em;
+  }
+
+  h3 {
+    color: #357A5E;
+  }
+
+  h2, h3, h4 {
+    font-family: 'Krona One', sans-serif;
+    text-decoration: underline;
+  }
+
+  h4 {
+    font-size: .8em;
+    text-decoration: underline;
+  }
+
+  strong {
     font-size: 1.5em;
   }
 
@@ -254,6 +279,10 @@ div {
         display: none;
       }
 
+      header {
+        padding: .5em;
+      }
+
       nav {
         display: flex;
         justify-content: space-between;
@@ -283,6 +312,31 @@ div {
    /* <------- responsive 640 ------------> */
 
     @media all and (min-width: 640px) {
+      ul, .logo, video {
+        display: block;
+      }
+
+      button {
+        display: none;
+      }
+
+      nav {
+        width: 70%;
+        justify-content: space-around;
+      }
+
+      main aside {
+        width: 40%;
+      }
+
+      video {
+        width: 400px;
+        height: 260px;
+      }
+
+      li {
+        margin: .5em;
+      }
 
     }
 
