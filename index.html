@@ -40,7 +40,12 @@
   <header>
 <!-- ############## Insert Navigation mobile ############### -->
 <!-- ############## Insert title ############### -->
-    <h1>Univers Jardin</h1>
+    <section class="flex blocCenter">
+      <aside class="tCenter">
+        <img class="logo" src="img/logo.png" alt="">
+      </aside>
+      <h1>Univers Jardin</h1>
+    </section>
 <!-- ############## Insert Navigation ############### -->
     <div class="flex spaceBetween">
       <button type="submit" name="button">Menu hamburger</button>
@@ -67,25 +72,24 @@
 <!-- ############## Start Main part ############### -->
   <main>
 <!-- ############## Bienvenue ############### -->
-    <div class="flex">
-      <aside>
-        <img class="logo" src="img/logo.png" alt="">
-      </aside>
-      <div>
-        <video width="800" height="450" src="video/univers-jardin.mp4" muted autoplay loop poster="posterimage.jpg"></video>
-      </div>
+  <section class="welcome">
+    <div class="flex blocCenter">
+      <video width="800" height="450" src="video/univers-jardin.mp4" muted autoplay loop poster="posterimage.jpg"></video>
     </div>
-    <section>
-      <p class="tJustify">Avec plus de 2500m², Univers Jardin est la plus grande jardinerie et de décoration de Sainte-Maxime.<br>
+    <div>
+      <p class="tJustify color">
+      <strong>Avec plus de 2500m², Univers Jardin est la plus grande jardinerie et de décoration de Sainte-Maxime.</strong><br>
       <br>
-      Vous y trouverez le plus grand choix de mobilier, piscine, SPA, décorations et aménagements pour votre jardin.<br>
-      La meilleure qualité et à tous les prix afin de satisfaire toutes les budgets.</p>
-    </section>
+      Vous y trouverez le plus grand choix de mobilier, piscine, SPA, décorations et aménagements pour votre jardin.<br><br>
+      <b>La meilleure qualité et à tous les prix afin de satisfaire toutes les budgets.</b></p>
+    </div>
+  </section>
 <!-- ############## Video ############### -->
 
 <!-- ############## Articles ############### -->
     <section class="tCenter">
       <h3>Notre sélection</h3>
+      <div class="flex" id="RegularArticle">
         <article>
           <a href="produits.html">
             <img class="img" src="img/salons/salon-anthracite.jpg" alt="">
@@ -113,6 +117,7 @@
           <p><strong>3999  €</strong><br>
             L.3,5m x l.3,5m x H.1,2m</p>
         </article>
+      </div>
     </section>
   </main>
 <!-- ############## End Main part ############### -->

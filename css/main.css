@@ -97,61 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header {
-  background-image: url(img/header.jpg) opacity: 0.5;
-  background-color: #61D095;
-}
-
-nav {
-  background-color: gray;
-}
-
-ul {
-  background-color: maroon;
-}
-
-nav aside {
-  background-color: navy;
-}
-
-input {
-  width: 150px;
-}
-
-
-.seconColor {
-  color: ##61D095;
-}
-
-
-main {
-  background-color: red;
-}
-
-footer {
-  padding: .5em;
-  background-color: #61D095;
-}
-
-article {
-  margin: .5em;
-  padding: .5em;
-  background-color: pink;
-}
-
-aside {
-  background-color: purple;
-}
-
-p {
-  background-color: teal;
-}
-
-div {
-  background-color: aqua;
-}
-
-
 
    /* start global classes */
 
@@ -172,6 +117,10 @@ div {
     justify-content: space-between;
   }
 
+  .blocCenter {
+    justify-content: center;
+  }
+
   .icon {
     width: 50px;
     height: 36px;
@@ -184,6 +133,15 @@ div {
   .tJustify {
     text-align: justify;
   }
+
+  .seconColor {
+    color: ##61D095;
+  }
+
+  .color {
+    color: white;
+  }
+
    /* end global classes */
 
 
@@ -241,8 +199,26 @@ div {
 
    /* Start Header style*/
 
+   header {
+     background-image: url(img/header.jpg) opacity: 0.5;
+     background-color: #61D095;
+   }
 
+   nav {
+     background-color: gray;
+   }
 
+   ul {
+     background-color: maroon;
+   }
+
+   nav aside {
+     background-color: navy;
+   }
+
+   input {
+     width: 150px;
+   }
 
    /*End header style*/
 
@@ -250,6 +226,10 @@ div {
 
    /* Start footer style*/
 
+   footer {
+     padding: .5em;
+     background-color: #61D095;
+   }
 
    /*End footer style*/
 
@@ -257,7 +237,35 @@ div {
 
    /* Start index main style*/
 
+   main {
+     background-color: red;
+   }
 
+   article {
+     margin: .5em;
+     padding: .5em;
+     background-color: pink;
+   }
+
+   aside {
+     background-color: purple;
+   }
+
+   p {
+     background-color: teal;
+   }
+
+   div {
+     background-color: aqua;
+   }
+
+   article {
+     border: 1px solid gray;
+   }
+
+   article:hover {
+     box-shadow: 3px 3px 15px gray;
+   }
 
 
    /*End index main style*/
@@ -323,6 +331,7 @@ div {
       nav {
         width: 70%;
         justify-content: space-around;
+        align-items: center;
       }
 
       main aside {
@@ -330,8 +339,8 @@ div {
       }
 
       video {
-        width: 400px;
-        height: 260px;
+        width: 600px;
+        height: 460px;
       }
 
       li {
@@ -344,6 +353,36 @@ div {
     /* <------- responsive 1280 ------------> */
 
     @media all and (min-width: 1280px) {
+      article, header aside {
+        width: 30%;
+      }
+
+      main {
+        height: 200vh;
+      }
+
+      video {
+        width: 800px;
+        height: 660px;
+      }
+
+      #RegularArticle {
+        display: flex;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 30%;
+      }
 
     }
 
